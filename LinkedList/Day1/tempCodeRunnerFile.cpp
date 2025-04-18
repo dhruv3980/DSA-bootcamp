@@ -1,0 +1,1 @@
+Node* first = new Node(10);
