@@ -6,7 +6,7 @@ It contains C++ implementations, practice exercises, and concepts that I am cove
 ---
 
 ## 📌 Overview
-- Written in **C++**  
+- Written in **C++**
 - Focused on clarity and clean code practices  
 - Covers fundamental to advanced topics in DSA  
 - Updated consistently as I make progress  
