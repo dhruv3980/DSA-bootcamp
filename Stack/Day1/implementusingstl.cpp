@@ -23,6 +23,7 @@ int main(){
     cout<<"Printing the size of the stack "<<s.size()<<endl;
 
     cout<<"Remove the element in  the stack "<<endl;
+
     
 
     while(!s.empty()){

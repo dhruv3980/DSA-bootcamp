@@ -1,57 +1,48 @@
 #include<iostream>
 #include<stack>
-
 using namespace std;
 
-void solve(stack<int>&s, int& topelement){
+void inseratbottom(stack<int>&s, int& topelement){
     if(s.empty()){
         s.push(topelement);
         return;
     }
 
-    int target = s.top();
+    int topelement1 = s.top();
     s.pop();
-    solve(s,topelement);
+    inseratbottom(s, topelement);
 
-    s.push(target);
-
-
+    s.push(topelement1);
 
 
 }
 
-
 void reverse(stack<int>&s){
-    // Base case
     if(s.empty()){
-        
-        return;
+        return ;
     }
 
     int topelement = s.top();
     s.pop();
+
     reverse(s);
-    
-    solve(s,topelement);
+
+    inseratbottom(s, topelement);
 
 }
-
 int main(){
     stack<int>s;
-    for(int i=10; i<=50; i+=10){
-        s.push(i);
-    }
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(40);
 
     reverse(s);
 
-
-   
-    cout<<"printing the stack "<<endl;
+    cout<<"Printing the stack "<<endl;
 
     while(!s.empty()){
         cout<<s.top()<<" ";
         s.pop();
     }
-    cout<<endl;
-
 }
