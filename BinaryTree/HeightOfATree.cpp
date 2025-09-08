@@ -147,4 +147,4 @@ int main(){
     cout<<"Print the sum of the node"<< sumofNode(hea);
 
 
-}
+} 
