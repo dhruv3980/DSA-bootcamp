@@ -38,6 +38,7 @@ void kthLevelOfTree(Node* root, int kthlevel , int k){
 
     if(kthlevel==k){
         cout<<root->data<<" ";
+        return;
     }
 
     kthLevelOfTree(root->left, kthlevel, k+1);

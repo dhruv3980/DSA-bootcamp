@@ -104,5 +104,5 @@ int main(){
 
     Node* root = buildTree(arr, size);
 
-    cout<<lca(root, 3,6);
+    cout<<lca(root, 3,15);
 }
