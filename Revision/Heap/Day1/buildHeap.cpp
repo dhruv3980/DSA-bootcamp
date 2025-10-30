@@ -102,8 +102,9 @@ int main(){
     Heap h;
 
     h.push(1);
-    h.push(2);
+    h.push(6);
     h.push(3);
+    h.push(4);
 
 
     while(!h.empty()){
@@ -113,6 +114,4 @@ int main(){
 
     }
 
-    cout<<h.top();
-    h.pop();
 }

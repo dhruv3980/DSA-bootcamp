@@ -15,7 +15,7 @@ class student{
     }
 
     bool operator< (const student& obj1) const{
-        return this->marks<obj1.marks;
+        return this->marks>obj1.marks;
     }
 };
 
@@ -27,7 +27,7 @@ struct compare{
     }
 };
 int main(){
-    priority_queue<student, vector<student>, less<student> >pq;
+    priority_queue<student >pq;
 
   
 
